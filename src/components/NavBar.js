@@ -2,12 +2,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import ShoppingCart from "../assets/img/carro-de-la-carretilla.png";
 
 function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Los pericos Dev Tools</Navbar.Brand>
+        <Navbar.Brand href="#home">Los pericos Dev Tooll</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -25,11 +26,9 @@ function CollapsibleExample() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            <img src={ShoppingCart} width={30} onClick={} />
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -38,3 +37,5 @@ function CollapsibleExample() {
 }
 
 export default CollapsibleExample;
+
+const ModalCarrito = () => {}
